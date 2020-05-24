@@ -1,12 +1,13 @@
-ROBBY WAS HERE
-brew install postgresql
+## ROBBY & KERI WERE HERE
 
-pip install -r requirements.in && pip install -r dev-requirements.in
+`brew install postgresql`
 
-python manage.py makemigrations
+`pip install -r requirements.txt`
 
-python manage.py migrate
+`python manage.py makemigrations`
 
-in ./backend do python manage.py celery
+`python manage.py migrate`
 
-python manage.py createsuperuser
+~~in ./backend do python manage.py celery~~
+
+`python manage.py createsuperuser`
