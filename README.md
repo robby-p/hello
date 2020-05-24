@@ -1,4 +1,4 @@
-## ROBBY WAS HERE
+## ROBBY & KERI WERE HERE
 
 `brew install postgresql`
 
