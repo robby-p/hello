@@ -1,20 +1,37 @@
 {% block sidebar %}
 
         <style>
-                .card{
-                    box-shadow: 0 14px 48px #E3E7EB;
-                }
+                {% comment %} .card{
+                    box-shadow: 0 14px 48px #f0f0f0;
+                } {% endcomment %}
             
         </style>
 
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4 float-right ">
         <div class="card my-4">
-                <h5 class="card-header">SideBarrrrr</h5>
+                <h5 class="card-header">Offers</h5>
             <div class="card-body">
-                <p class="card-text"> Sidebar info maybe good for bidding or cost details</p>
-                <a href="#"
-                class="btn btn-danger">Button bc why not</a>
+                {% comment %} <p class="card-text"> turn this into comments</p> {% endcomment %}
+                <form action="/blog/{{ post.slug }}/" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.author }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.body }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit &rarr;</button>
+                </form>
+                <h4>Comments:</h4>
+                {% for comment in comments %}
+                <p>
+                    On {{comment.created_on.date }}&nbsp;
+                    <b>{{ comment.author }}</b> wrote:
+                </p>
+                <p>{{ comment.body }}</p>
+                <hr>
+                {% endfor %}
             </div>
         </div>
         </div>
