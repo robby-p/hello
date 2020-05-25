@@ -1,0 +1,4 @@
+django<3
+libsass 
+django-compressor 
+django-sass-processor

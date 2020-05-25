@@ -33,7 +33,6 @@ npm-debug.log
 *.map
 
 # General
-/happyfuntime-venv/
 /venv/
 /env/
 /output/
