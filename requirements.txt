@@ -77,7 +77,7 @@ pylint-plugin-utils==0.6
 pyparsing==2.4.7
 python-decouple==3.3
 pytz==2020.1
-PyYAML==5.3.1
+PyYAML==5.4
 redis==3.5.2
 regex==2020.5.14
 requests==2.23.0
